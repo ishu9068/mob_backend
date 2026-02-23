@@ -7,7 +7,7 @@ http://localhost:5000
 ________________________________________
 A) Signup Customer
 Method: POST
-URL: http://localhost:5000/api/auth/signup
+URL: https://mob-backend.vercel.app/api/auth/signup
 Body (JSON):
 {
   "name": "Ishu Customer",
@@ -18,7 +18,7 @@ Body (JSON):
 ________________________________________
 B) Signup Seller
 Method: POST
-URL: http://localhost:5000/api/auth/signup
+URL: https://mob-backend.vercel.app/api/auth/signup
 Body (JSON):
 {
   "name": "Rahul Seller",
@@ -32,7 +32,7 @@ Body (JSON):
 ________________________________________
 C) Signup Admin
 Method: POST
-URL: http://localhost:5000/api/auth/signup
+URL: https://mob-backend.vercel.app/api/auth/signup
 Body (JSON):
 {
   "name": "Admin User",
@@ -43,7 +43,7 @@ Body (JSON):
 ________________________________________
 D) Login (Admin)
 Method: POST
-URL: http://localhost:5000/api/auth/login
+URL: https://mob-backend.vercel.app/api/auth/login
 Body (JSON):
 {
   "email": "admin@gmail.com",
@@ -53,19 +53,19 @@ Note: Response se ADMIN_TOKEN copy karo.
 ________________________________________
 E) Admin Get Sellers
 Method: GET
-URL: http://localhost:5000/api/admin/sellers
+URL: https://mob-backend.vercel.app/api/admin/sellers
 Headers:
 Authorization: Bearer ADMIN_TOKEN
 ________________________________________
 F) Admin Approve Seller
 Method: PUT
-URL: http://localhost:5000/api/admin/approve/SELLER_ID
+URL: https://mob-backend.vercel.app/api/admin/approve/SELLER_ID
 Headers:
 Authorization: Bearer ADMIN_TOKEN
 ________________________________________
 G) Seller Login (After Approval)
 Method: POST
-URL: http://localhost:5000/api/auth/login
+URL: https://mob-backend.vercel.app/api/auth/login
 Body (JSON):
 {
   "email": "seller@gmail.com",
@@ -75,7 +75,7 @@ Note: Response se SELLER_TOKEN copy karo.
 ________________________________________
 H) Seller Create Product
 Method: POST
-URL: http://localhost:5000/api/product
+URL: https://mob-backend.vercel.app/api/product
 Headers:
 Authorization: Bearer SELLER_TOKEN
 Body (JSON):
@@ -90,11 +90,11 @@ Body (JSON):
 ________________________________________
 I) Public Get Products
 Method: GET
-URL: http://localhost:5000/api/product
+URL: https://mob-backend.vercel.app/api/product
 ________________________________________
 J) Customer Login
 Method: POST
-URL: http://localhost:5000/api/auth/login
+URL: https://mob-backend.vercel.app/api/auth/login
 Body (JSON):
 {
   "email": "customer@gmail.com",
@@ -104,7 +104,7 @@ Note: Response se CUSTOMER_TOKEN copy karo.
 ________________________________________
 K) Customer Add to Cart
 Method: POST
-URL: http://localhost:5000/api/cart/add
+URL: https://mob-backend.vercel.app/api/cart/add
 Headers:
 Authorization: Bearer CUSTOMER_TOKEN
 Body (JSON):
@@ -115,19 +115,19 @@ Body (JSON):
 ________________________________________
 L) Customer View Cart
 Method: GET
-URL: http://localhost:5000/api/cart
+URL: https://mob-backend.vercel.app/api/cart
 Headers:
 Authorization: Bearer CUSTOMER_TOKEN
 ________________________________________
 M) Customer Place Order
 Method: POST
-URL: http://localhost:5000/api/order/place
+URL: https://mob-backend.vercel.app/api/order/place
 Headers:
 Authorization: Bearer CUSTOMER_TOKEN
 ________________________________________
 N) Customer Order History
 Method: GET
-URL: http://localhost:5000/api/order/my
+URL: https://mob-backend.vercel.app/api/order/my
 Headers:
 Authorization: Bearer CUSTOMER_TOKEN
 ________________________________________
